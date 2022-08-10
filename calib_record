@@ -1,0 +1,4 @@
+#! /bin/zsh
+
+rosbag record --duration=1 /camera/color/image_raw
+rosbag record --duration=10 /livox/lidar

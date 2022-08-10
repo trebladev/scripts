@@ -1,0 +1,4 @@
+#! /bin/zsh
+
+sudo docker start ubuntu16
+sudo docker exec -it ubuntu16 /bin/bash
