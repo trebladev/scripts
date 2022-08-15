@@ -1,0 +1,10 @@
+#! /bin/zsh
+
+mkdir ws_test/ws_livox_camera_calib
+cd  ws_test/ws_livox_camera_calib
+mkdir src && cd src
+git clone https://github.com/hku-mars/livox_camera_calib.git
+git clone https://github.com/Livox-SDK/livox_camera_lidar_calibration.git
+cd ..
+catkin_make
+

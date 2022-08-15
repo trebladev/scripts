@@ -1,0 +1,3 @@
+#! /bin/zsh
+
+rosbag record /livox/imu /livox/lidar /camera/color/image_raw

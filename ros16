@@ -1,4 +1,4 @@
 #! /bin/zsh
 
-sudo docker start ubuntu16
-sudo docker exec -it ubuntu16 /bin/bash
+sudo docker start ros-kinetic
+sudo docker exec -it ros-kinetic /bin/bash

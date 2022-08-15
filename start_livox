@@ -1,0 +1,5 @@
+#! /bin/zsh
+
+cd /home/xuan/ws_test/ws_r3live
+source ./devel/setup.zsh
+roslaunch livox_ros_driver livox_lidar.launch

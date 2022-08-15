@@ -1,0 +1,31 @@
+#! /usr/bin/zsh
+
+set -e
+
+cd requirement_lib
+git clone https://github.com/Livox-SDK/Livox-SDK.git
+cd Livox-SDK
+cd build
+cmake ..
+make -j
+sudo make install
+cd 
+
+
+cd ws_test
+mkdir ws_r3live && cd ws_r3live
+mkdir src && cd src
+git clone https://github.com/hku-mars/r3live.git
+git clone https://github.com/ziv-lin/livox_ros_driver_for_R2LIVE.git		
+mv livox_ros_driver_for_R2LIVE livox_ros_driver
+cd ..
+catkin_make
+cd ..
+
+mkdir ws_fastlio && cd ws_fastlio
+mkdir src && cd src
+git clone --recurse https://github.com/hku-mars/FAST_LIO.git
+git clone https://github.com/Livox-SDK/livox_ros_driver.git
+cd ..
+catkin_make
+cd ..
